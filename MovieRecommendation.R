@@ -2,11 +2,12 @@ install.packages(data.table, dependencies = TRUE)
 library(readr)
 library(data.table)
 library(dplyr)
-
+# Read Movies and Ratings from CSV
 movies <- read_csv("/R/Week5/MovieLens/ml-20m/movies.csv")
 ratings <-  fread("/R/Week5/MovieLens/ml-20m/ratings.csv")
 View(ratings)
 View(movies)
+
 # 
 # library(data.table)
 # genres <- as.data.frame(movies$genres, stringsAsFactors=FALSE)
