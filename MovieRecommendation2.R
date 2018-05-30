@@ -35,7 +35,6 @@ Number_Movies
 ## [1] 1682
 Number_Users
 ## [1] 943
-
 density <- round(((Number_Ratings / (Number_Movies * Number_Users)) * 100), 1)
 density
 
