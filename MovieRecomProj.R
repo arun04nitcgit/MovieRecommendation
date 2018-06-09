@@ -7,9 +7,6 @@ library(dplyr)
 #movies <- read.csv("movies.csv", header = TRUE, stringsAsFactors=FALSE)
 #ratings <- read.csv("ratings.csv", header = TRUE)
 
-
-movies <- read_csv("C:/Users/arun_manu/Documents/CognizantLearning/DSLA/R/Week5/MovieLens/ml-latest-small/movies.csv")
-ratings <-  fread("C:/Users/arun_manu/Documents/CognizantLearning/DSLA/R/Week5/MovieLens/ml-latest-small/ratings.csv")
 ratings <- ratings[,- c("timestamp")]
 
 library(reshape2)
