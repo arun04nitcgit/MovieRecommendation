@@ -2,11 +2,9 @@ library(readr)
 library(data.table)
 library(dplyr)
 
-
 #load data
 #movies <- read.csv("movies.csv", header = TRUE, stringsAsFactors=FALSE)
 #ratings <- read.csv("ratings.csv", header = TRUE)
-
 ratings <- ratings[,- c("timestamp")]
 
 library(reshape2)
