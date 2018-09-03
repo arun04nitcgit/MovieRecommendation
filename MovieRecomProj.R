@@ -20,8 +20,10 @@ library(recommenderlab)
 #Convert rating matrix into a recommenderlab sparse matrix
 ratingmat <- as(ratingmat, "realRatingMatrix")
 
+
 #Normalize the data
 ratingmat_norm <- normalize(ratingmat)
+
 
 #Create Recommender Model. "UBCF" stands for User-Based Collaborative Filtering
 recommender_model <- Recommender(ratingmat_norm, method = "UBCF", param=list(method="Cosine",nn=30))
