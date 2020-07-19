@@ -9,10 +9,8 @@ library(ggplot2)
 
 # data <- read.table('u.data')
 
-#C:\Users\arun_manu\Documents\CognizantLearning\DSLA\R\Week5\MovieLens\Movielense-master
-
-movies <- read_csv("CognizantLearning/DSLA/R/Week5/MovieLens/ml-20m/movies.csv")
-ratings <-  fread("CognizantLearning/DSLA/R/Week5/MovieLens/Movielense-master/ratings100k.csv")
+movies <- read_csv("MyFilePath/movies.csv")
+ratings <-  fread("MyFilePath/ratings100k.csv")
 
 nrow(ratings)
 #data <- ratings[1:500000,]
